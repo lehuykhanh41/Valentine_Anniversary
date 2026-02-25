@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Website with Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1st Layer: Image + Play Button -->
+  <div class="layer-1" id="play-button">
+    <button id="playButton" style="background-color: transparent; border: none; border-radius: 50%; padding: 10vw; box-shadow: 0 0 30px 15px rgba(255, 255, 0, 1);"><img src="./assets/playbtn.png" alt="Image" class="image"></button>
+  </div>
+
+  <!-- 2nd Layer: Red Curtains -->
+  <div class="layer-2">
+    <div class="curtain left"></div>
+    <div class="curtain right"></div>
+  </div>
+
+  <!-- 3rd Layer: Video Container -->
+  <div class="layer-3">
+    <div class="video-container">
+      <!-- Local Video -->
+      <video id="localVideo" width="100%" height="auto" controls>
+        <source src="./assets/Perf.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
